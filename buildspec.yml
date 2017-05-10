@@ -1,6 +1,10 @@
 version: 0.1
 
 phases:
+  pre_build:
+    commands:
+      - echo Pre Build started on `data`
+      - sudo apt-get install maven
   build:
     commands:
       - echo Build started on `date`
